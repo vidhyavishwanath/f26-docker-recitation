@@ -1,1 +1,11 @@
 
+version: "3.9"
+services: 
+  my-fast-api-service:
+    container_name: whos-my-ta
+    build: .
+    image: myimage
+    cpus: 1
+    mem_limit: 1024m
+    ports: 
+      - "8080:8080"
